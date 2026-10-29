@@ -12,11 +12,16 @@ For introducing heterozygosity: python introduce_het.py test/ChloroSubSet.fasta 
 sudo python collabcrisp_bowtie.py ChloroSubSet_hetSites.fasta test/ChloroSubSet_1.fq test/ChloroSubSet_2.fq ChloroSubset_hetSites_Bowtie2Masked.fa
 
 Shawn files trial
+
+When fastq is in data
 python collabcrisp_bowtie.py \
     ~/data/projectTwo/tomi_all_fasta/Wrightia_religiosa.transdecoder.cds.fasta \
     ~/data/projectTwo/jordan_all_fastq/Wrightia_religiosa_1.fq \
     ~/data/projectTwo/jordan_all_fastq/Wrightia_religiosa_2.fq \
     ~/data/projectTwo/CRISP_bowtie/44fasta_maskedwithbowtie/Wrightia_religiosa_masked.fasta
+
+When fastq is in scratch
+python collabcrisp_bowtie.py ~/data/projectTwo/tomi_all_fasta/Tabernaemontana_elegans.transdecoder.cds.fasta /scratch/jordirectory/Tabernaemontana_elegans_1.fq /scratch/jordirectory/Tabernaemontana_elegans_2.fq ~/data/projectTwo/CRISP_bowtie/44fasta_maskedwithbowtie/Tabernaemontana_elegans_masked.fasta
 '''
 
 import sys
